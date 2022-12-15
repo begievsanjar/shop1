@@ -68,11 +68,11 @@
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>
-                            <li><a href="./shop.html">Shop</a></li>
+                            <li class="active"><a href="{% url 'main:home' %}">Home</a></li>
+                            <li><a href="{% url 'product:shop' %}">Shop</a></li>
                             <li><a href="{% url 'blog:blog-list' %}">Blog</a></li>
-                            <li><a href="{% url 'about-as' %}">About as</a></li>
-                            <li><a href="{% url 'contact' %}">Contacts</a></li>
+                            <li><a href="{% url 'main:about-as' %}">About as</a></li>
+                            <li><a href="{% url 'main:contact' %}">Contacts</a></li>
                         </ul>
                     </nav>
                 </div>
