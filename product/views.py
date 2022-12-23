@@ -1,7 +1,9 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import ListView
+from .models import ProductModel
 
 
-class ShopListView(TemplateView):
+class ShopListView(ListView):
+    model = ProductModel
     template_name = 'main/shop.html'
 
